@@ -48,3 +48,21 @@ users.extraUsers.<username> = {
 ```
 nixos-rebuild switch --install-bootloader
 ```
+
+## update nix
+
+global
+
+edit /etc/nixos/configuration.nix and add:
+
+```
+nixos-rebuild switch --install-bootloader
+```
+
+user
+
+edit ~/.config/nixpkgs/home.nix and run:
+
+```
+home-manager switch
+```
