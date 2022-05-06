@@ -13,6 +13,7 @@ imports =
   home.packages = with pkgs; [
     neovim
     jdk
+    chromium
     youtube-dl
     cargo
     gh
