@@ -14,6 +14,7 @@ imports =
     neovim
     jdk
     chromium
+    gcc
     youtube-dl
     cargo
     gh
