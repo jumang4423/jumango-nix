@@ -39,7 +39,7 @@ services.xserver = {
 		xterm.enable = false;
 	};
 
-	dpi = 128;
+	dpi = 96;
 
 	displayManager = {
 		defaultSession = "none+i3";
