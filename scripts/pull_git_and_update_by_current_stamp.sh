@@ -3,7 +3,7 @@
 git pull origin master
 
 mkdir -p ~/.config/nixpkgs/
-mkdir -o ~/.config/i3
+mkdir -p ~/.config/i3
 
 # copy files
 sudo cp -f ./nixp/configuration.nix /etc/nixos/configuration.nix

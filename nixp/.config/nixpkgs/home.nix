@@ -10,7 +10,6 @@
     jdk
     youtube-dl
     jetbrains.webstorm
-    jetbrains.idea
   ];
 
 }
