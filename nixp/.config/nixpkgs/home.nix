@@ -26,6 +26,7 @@ imports =
     jdk
     chromium
     nodejs-14_x
+    yarn
     gcc
     youtube-dl
     cargo
