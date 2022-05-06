@@ -15,7 +15,6 @@ imports =
     neovim
     jdk
     youtube-dl
-    rustup
   ];
 
 }
