@@ -1,12 +1,8 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
 { config, pkgs, ... }:
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
       ./hardware-configuration.nix
     ];
 
@@ -14,13 +10,13 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "nixos"; # Define your hostname.
   # Pick only one of the below networking options.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-  # networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
   # Set your time zone.
-  # time.timeZone = "Europe/Amsterdam";
+  time.timeZone = "Asia/Tokyo";
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -46,7 +42,6 @@ services.xserver = {
 	dpi = 128;
 
 	displayManager = {
-	# 	lightdm.enable = true;
 		defaultSession = "none+i3";
 	};
 
@@ -59,16 +54,10 @@ services.xserver = {
 			i3blocks
 		];
 	};
-}; 
-
-# environment.variables = {
-# 	GDK_SCALE = "2";
-# 	GDK_DPI_SCALE = "0.5";
-# 	_JAVA_OPTIONS = "-Dsun.java2d.uiScale=2";
-# }; 
+};
 
   # Configure keymap in X11
-  # services.xserver.layout = "us";
+  services.xserver.layout = "us";
   # services.xserver.xkbOptions = {
   #   "eurosign:e";
   #   "caps:escape" # map caps to escape.
@@ -85,19 +74,22 @@ services.xserver = {
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  # users.users.jane = {
-  #   isNormalUser = true;
-  #   extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
-  # };
+users.extraUsers.jumango = {
+	isNormalUser = true;
+	shell = pkgs.bash;
+	home = "/home/jumango";
+	extraGroups = [ "wheel" ];
+};
+
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-	st	
+	st
 	neofetch
 	git
 	starship
-	vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+	vim
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -129,18 +121,9 @@ programs.bash = {
 programs.git = {
 	enable = true;
 	userName = "jumang4423";
-	userEmail = "catontheskate4423@gmail.com";
 };
 
 programs.starship.enable = true;
-
-users.extraUsers.jumango = {
-	isNormalUser = true;
-	shell = pkgs.bash;
-	home = "/home/jumango";
-	extraGroups = [ "wheel" ];
-};
-
   # Copy the NixOS configuration file and link it from the resulting system
   # (/run/current-system/configuration.nix). This is useful in case you
   # accidentally delete configuration.nix.
