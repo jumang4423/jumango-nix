@@ -87,7 +87,6 @@ users.extraUsers.jumango = {
   environment.systemPackages = with pkgs; [
 	st
 	neofetch
-	git
 	starship
 	vim
   ];
@@ -121,6 +120,7 @@ programs.bash = {
 programs.git = {
 	enable = true;
 	userName = "jumang4423";
+	userEmail = "catontheskate4423@gmail.com";
 };
 
 programs.starship.enable = true;
