@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # prepare files
-sudo cp -f /etc/nixos/configuration.nix ./nixp/configuration.nix
+sudo cp -rf /etc/nixos/configuration.nix ./nixp/configuration.nix
 rm -rf ./nixp/.config/nixpkgs
-cp -f ~/.config/nixpkgs ./nixp/.config
-cp -f ~/.config/i3/config ./nixp/.config/i3/config
+cp -rf ~/.config/nixpkgs ./nixp/.config
+cp -rf ~/.config/i3/config ./nixp/.config/i3/config
 
 # update git
 git add .
