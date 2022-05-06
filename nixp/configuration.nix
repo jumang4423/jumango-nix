@@ -31,7 +31,13 @@
   # };
 
   # Enable the X11 windowing system.
- environment.pathsToLink = [ "libexec" ];
+ environment = {
+	sessionVariables = rec {
+		NIXPKGS_ALLOW_UNFREE = 1;
+	};		
+
+	pathsToLink = [ "libexec" ];
+};
 
 services.xserver = {
 	enable = true;
