@@ -49,6 +49,16 @@ users.extraUsers.<username> = {
 nixos-rebuild switch --install-bootloader
 ```
 
+7. git ssh
+ TODO: better way to do this
+```bash
+mkdir .ssh
+cd .ssh
+ssh-keygen
+# showing public ssh key
+cat id_rsa.pub
+```
+
 ## update nix
 
 global
