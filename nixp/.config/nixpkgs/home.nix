@@ -26,6 +26,7 @@ imports =
     jdk
     chromium
     gcc
+    fzf
     cargo
     gh
   ];
