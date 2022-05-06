@@ -1,7 +1,6 @@
 { pkgs, environment, ...}: {
 imports =
     [
-      ./pkgs/rust.nix
     ];
 
 
