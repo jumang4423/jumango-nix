@@ -9,7 +9,6 @@
     neovim
     jdk
     youtube-dl
-    jetbrains.webstorm
   ];
 
 }
