@@ -1,4 +1,10 @@
 { pkgs, environment, ...}: {
+imports =
+    [
+      ./pkgs/rust.nix
+    ];
+
+
   programs.git = {
   	enable = true;
   	userName = "jumang4423";
