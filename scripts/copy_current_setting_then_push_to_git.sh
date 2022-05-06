@@ -2,7 +2,7 @@
 
 # prepare files
 sudo cp -f /etc/nixos/configuration.nix ./nixp/configuration.nix
-cp -f ~/.config/nixpkgs/home.nix ./nixp/.config/nixpkgs/home.nix
+cp -f ~/.config/nixpkgs/* ./nixp/.config/nixpkgs/*
 cp -f ~/.config/i3/config ./nixp/.config/i3/config
 
 # update git
