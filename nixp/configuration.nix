@@ -87,7 +87,6 @@ users.extraUsers.jumango = {
   environment.systemPackages = with pkgs; [
 	st
 	neofetch
-	git
 	starship
 	vim
   ];
