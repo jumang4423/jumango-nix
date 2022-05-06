@@ -1,5 +1,7 @@
 # jumango nix
 
+nix settings
+
 ## minimal img for aarch64
 
 - required packages:
