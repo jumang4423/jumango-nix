@@ -27,6 +27,7 @@ imports =
     chromium
     nodejs-14_x
     yarn
+    mozjpeg
     gcc
     youtube-dl
     cargo
