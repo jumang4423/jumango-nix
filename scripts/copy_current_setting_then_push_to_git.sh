@@ -12,5 +12,5 @@ git commit -m "copy_current_setting_then_push_to_git.sh"
 git push origin master
 
 # now update the nix system
-sudo nixos-rebuild switch --install-bootloadeer
+sudo nixos-rebuild switch --install-bootloader
 home-manager switch
