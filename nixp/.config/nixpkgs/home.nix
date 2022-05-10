@@ -27,7 +27,7 @@ imports =
     chromium
     gcc
     fzf
-    cargo
+#    cargo
     gh
   ];
 
