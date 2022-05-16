@@ -10,7 +10,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  virtualization.docker.enable = true; 
+  virtualisation.docker.enable = true; 
 
   networking.hostName = "nixos"; # Define your hostname.
   # Pick only one of the below networking options.
