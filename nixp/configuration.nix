@@ -35,6 +35,9 @@
   # Enable the X11 windowing system.
  environment = {
 	pathsToLink = [ "libexec" ];
+	variables = {
+		EDITOR = "nvim";
+	};
 };
 
 services.xserver = {
@@ -92,7 +95,8 @@ users.extraUsers.jumango = {
 	neofetch
 	home-manager
 	starship
-	vim
+python3
+vim
 
 	# st from luke
 	(st.overrideAttrs (oldAttrs: rec {
@@ -135,6 +139,11 @@ programs.bash = {
 		la = "ls -al";
 		mm = "cd ..";
 	};
+};
+
+programs.neovim = {
+	enable = true;
+	viAlias = true;
 };
 
 programs.starship.enable = true;

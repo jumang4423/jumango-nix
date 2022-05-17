@@ -22,12 +22,10 @@ imports =
   };
 
   home.packages = with pkgs; [
-    neovim
     jdk
     chromium
     gcc
     fzf
-#    cargo
     gh
   ];
 
