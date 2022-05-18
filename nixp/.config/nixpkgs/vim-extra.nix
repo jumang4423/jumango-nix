@@ -1,5 +1,6 @@
 ''
 syntax enable
+filetype plugin indent on
 imap jj <Esc>
 colorscheme seoul256
 set number

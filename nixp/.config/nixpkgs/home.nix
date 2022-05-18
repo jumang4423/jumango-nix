@@ -49,7 +49,8 @@ imports =
 	package = pkgs.neovim-nightly;
 
 	plugins = with pkgs.vimPlugins; [
-		(plugin "junegunn/seoul256.vim")
+	  (plugin "junegunn/seoul256.vim")
+	  (plugin "rust-lang/rust.vim")	
 	];
 
 	extraConfig = import ./vim-extra.nix;
