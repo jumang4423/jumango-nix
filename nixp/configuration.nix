@@ -144,9 +144,8 @@ programs.bash = {
 programs.neovim = {
 	enable = true;
 	viAlias = true;
-	package = pkgs.neovim-nightly;
 
-
+	extraConfig = import ./vim-extra.nix;
 };
 
 programs.starship.enable = true;
