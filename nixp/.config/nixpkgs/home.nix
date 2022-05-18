@@ -1,5 +1,17 @@
 { pkgs, environment, ...}:
-let 
+let
+
+# installs a vim plugin from git with a given tag / branch
+  pluginGit = ref: repo: vimUtils.buildVimPluginFrom2Nix {
+    pname = "${lib.strings.sanitizeDerivationName repo}";
+    version = ref;
+    src = builtins.fetchGit {
+      url = "https://github.com/${repo}.git";
+      ref = ref;
+    };
+  };
+
+
 	plugin = pluginGit "HEAD";
 in {
 imports =
