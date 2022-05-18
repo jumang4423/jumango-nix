@@ -21,6 +21,12 @@ imports =
       };
   };
 
+  programs.neovim = {
+	enable = true;
+	viAlias = true;
+	extraConfig = import ./vim-extra.nix;
+};
+
   home.packages = with pkgs; [
     jdk
     chromium

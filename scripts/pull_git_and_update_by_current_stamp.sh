@@ -4,7 +4,6 @@ git pull origin master
 
 # copy files
 sudo cp -f ./nixp/configuration.nix /etc/nixos/configuration.nix
-sudo cp -f ./nixp/vim-extra.nix /etc/nixos/vim-extra.nix`
 rm -rf ~/.config/nixpkgs
 mkdir -p ~/.config/nixpkgs/pkgs
 cp -rf ./nixp/.config/nixpkgs ~/.config
