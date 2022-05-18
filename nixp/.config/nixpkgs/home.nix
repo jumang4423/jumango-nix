@@ -1,4 +1,7 @@
-{ pkgs, environment, ...}: {
+{ pkgs, environment, ...}:
+let 
+	plugin = pluginGit "HEAD";
+in {
 imports =
     [
     ];
