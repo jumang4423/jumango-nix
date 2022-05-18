@@ -40,6 +40,11 @@
 	};
 };
 
+fonts.fonts = with pkgs; [
+	(nerdfonts.override { fonts = [ "FiraCode"]; })
+];
+
+
 services.xserver = {
 	enable = true;
 	desktopManager = {
@@ -95,8 +100,8 @@ users.extraUsers.jumango = {
 	neofetch
 	home-manager
 	starship
-python3
-vim
+	python3
+	vim
 
 	# st from luke
 	(st.overrideAttrs (oldAttrs: rec {
