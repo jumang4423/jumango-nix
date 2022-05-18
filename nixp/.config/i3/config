@@ -48,7 +48,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec st -f "AnonymousPro:size=12"
+bindsym $mod+Return exec st -f "Liberation Mono:size=12"
 
 # kill focused window
 bindsym $mod+x kill
