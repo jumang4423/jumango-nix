@@ -144,6 +144,9 @@ programs.bash = {
 programs.neovim = {
 	enable = true;
 	viAlias = true;
+	package = pkgs.neovim-nightly;
+
+
 };
 
 programs.starship.enable = true;
