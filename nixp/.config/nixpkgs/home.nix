@@ -26,7 +26,7 @@ imports =
 	viAlias = true;
 
 	plugins = with pkgs.vimPlugins; [
-		(plugin "soft-aesthetic/soft-era-vim"
+		(plugin "soft-aesthetic/soft-era-vim")
 	];
 
 	extraConfig = import ./vim-extra.nix;
