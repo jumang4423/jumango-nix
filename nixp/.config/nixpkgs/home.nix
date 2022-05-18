@@ -51,6 +51,7 @@ imports =
 	plugins = with pkgs.vimPlugins; [
 	  (plugin "junegunn/seoul256.vim")
 	  (plugin "rust-lang/rust.vim")	
+	  (plugin "lambdalisue/fern.vim")
 	];
 
 	extraConfig = import ./vim-extra.nix;
