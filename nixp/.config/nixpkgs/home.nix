@@ -21,15 +21,17 @@ imports =
       };
   };
 
+
+
   programs.neovim = {
 	enable = true;
 	viAlias = true;
 
-	plugins = with pkgs.vimPlugins; [
-		(plugin "soft-aesthetic/soft-era-vim")
-	];
+	#plugins = with pkgs.vimPlugins; [
+	#	(plugin "soft-aesthetic/soft-era-vim")
+	#];
 
-	extraConfig = import ./vim-extra.nix;
+	#extraConfig = import ./vim-extra.nix;
 };
 
   home.packages = with pkgs; [
@@ -38,6 +40,7 @@ imports =
     gcc
     fzf
     gh
+    pbcopy
   ];
 
 }
