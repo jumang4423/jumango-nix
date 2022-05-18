@@ -1,4 +1,4 @@
-{ pkgs, environment, vimUrils, lib, config, ...}:
+{ pkgs, environment, vimUtils, lib, config, ...}:
 let
 
 # installs a vim plugin from git with a given tag / branch
