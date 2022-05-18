@@ -141,12 +141,6 @@ programs.bash = {
 	};
 };
 
-programs.neovim = {
-	enable = true;
-	viAlias = true;
-
-	extraConfig = import ./vim-extra.nix;
-};
 
 programs.starship.enable = true;
   # Copy the NixOS configuration file and link it from the resulting system
