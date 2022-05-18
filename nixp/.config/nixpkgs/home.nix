@@ -52,6 +52,7 @@ imports =
 	  (plugin "junegunn/seoul256.vim")
 	  (plugin "rust-lang/rust.vim")	
 	  (plugin "lambdalisue/fern.vim")
+	  (plugin "ziglang/zig.vim")
 	];
 
 	extraConfig = import ./vim-extra.nix;
