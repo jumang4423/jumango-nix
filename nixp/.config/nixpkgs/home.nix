@@ -33,9 +33,9 @@ imports =
 	viAlias = true;
 	package = pkgs.neovim-nightly;
 
-	#plugins = with pkgs.vimPlugins; [
-	#	(plugin "soft-aesthetic/soft-era-vim")
-	#];
+	plugins = with pkgs.vimPlugins; [
+		(plugin "soft-aesthetic/soft-era-vim")
+	];
 
 	#extraConfig = import ./vim-extra.nix;
 };
