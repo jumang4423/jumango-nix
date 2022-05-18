@@ -40,7 +40,7 @@ imports =
     gcc
     fzf
     gh
-    pbcopy
+    terminator
   ];
 
 }
