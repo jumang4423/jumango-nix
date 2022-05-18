@@ -21,11 +21,19 @@ imports =
       };
   };
 
+{
+  nixpkgs.overlays = [
+    (import (builtins.fetchTarball {
+      url = https://github.com/nix-community/neovim-nightly-overlay/archive/master.tar.gz;
+    }))
+  ];
+}
 
 
   programs.neovim = {
 	enable = true;
 	viAlias = true;
+	package = pkgs.neovim-nightly;
 
 	#plugins = with pkgs.vimPlugins; [
 	#	(plugin "soft-aesthetic/soft-era-vim")
