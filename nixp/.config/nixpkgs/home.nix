@@ -49,7 +49,7 @@ imports =
 	package = pkgs.neovim-nightly;
 
 	plugins = with pkgs.vimPlugins; [
-		(plugin "soft-aesthetic/soft-era-vim")
+		(plugin "junegunn/seoul256.vim")
 	];
 
 	extraConfig = import ./vim-extra.nix;

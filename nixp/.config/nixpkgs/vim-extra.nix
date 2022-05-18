@@ -1,5 +1,5 @@
 ''
 syntax enable
 imap jj <Esc>
-colorscheme soft-era
+colorscheme seoul256 
 ''
