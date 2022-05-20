@@ -49,6 +49,7 @@ imports =
 	package = pkgs.neovim-nightly;
 
 	plugins = with pkgs.vimPlugins; [
+	  (plugin "LnL7/vim-nix")
 	  (plugin "junegunn/seoul256.vim")
 	  (plugin "rust-lang/rust.vim")	
 	  (plugin "lambdalisue/fern.vim")
