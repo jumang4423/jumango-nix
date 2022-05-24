@@ -102,6 +102,7 @@ users.extraUsers.jumango = {
 	starship
 	python3
 	vim
+	gnome.gedit
 
 	# st from luke
 	(st.overrideAttrs (oldAttrs: rec {
