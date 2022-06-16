@@ -144,6 +144,7 @@ programs.bash = {
 	shellAliases = {
 		la = "ls -al";
 		mm = "cd ..";
+		nandakke_cd = "cd $(find . | fzf)"
 	};
 };
 
