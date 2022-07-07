@@ -66,6 +66,7 @@ imports =
     fzf
     gh
     terminator
+    tmux
   ];
 
 }
